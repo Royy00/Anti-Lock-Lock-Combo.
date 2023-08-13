@@ -1,5 +1,6 @@
 --// ROY MADE THIS SHIT! WORLD'S BEST DA HOOD COMBO SCRIPT MADE BY "certifiedjihadist"!!
--- B for Anti-Lock Q for Lock
+-- Q to Lock on E to Lock off
+-- B for Anti-Lock
 -- N for Super Speed
 
 getgenv().DNS = {
