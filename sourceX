@@ -1,7 +1,7 @@
 --// ROY MADE THIS SHIT! WORLD'S BEST DA HOOD COMBO SCRIPT MADE BY "certifiedjihadist"!!
 -- Q to Lock on E to Lock off
 -- B for Anti-Lock
--- N for Super Speed
+-- ADDED MOD DETECTOR !KICKS YOU WHEN A MOD/ADMIN JOINS!
 
 getgenv().DNS = {
     General = {
@@ -567,18 +567,61 @@ game:GetService("StarterGui"):SetCore("SendNotification", {
     Text = "MADE BY ROY certifiedjihadist on discord",
 })
 
-superhuman = false
-    plr = game.Players.LocalPlayer
-    mouse = plr:GetMouse()
-    mouse.KeyDown:connect(function(key)
-        if key == "n" and superhuman == false then
-            superhuman = true
-            game.Players.LocalPlayer.Character.Humanoid.Name = "Hum"
-            game.Players.LocalPlayer.Character.Hum.WalkSpeed = 225
-        elseif key == "n" and superhuman == true then
-            superhuman = false
-            game.Players.LocalPlayer.Character.Hum.WalkSpeed = 16
-            game.Players.LocalPlayer.Character.Hum.Name = "Humanoid"
-        end
-    end)
+
+local bitch = {
+ 163721789,
+ 15427717,
+ 201454243,
+ 822999,
+ 63794379,
+ 17260230,
+ 28357488,
+ 93101606,
+ 8195210,
+ 89473551,
+ 16917269,
+ 85989579,
+ 1553950697,
+ 476537893,
+ 155627580,
+ 31163456,
+ 7200829,
+ 25717070,
+ 201454243,
+ 15427717,
+ 63794379,
+ 16138978,
+ 60660789,
+ 17260230,
+ 16138978,
+ 1161411094,
+ 9125623,
+ 11319153,
+ 34758833,
+ 194109750,
+ 35616559,
+ 1257271138,
+ 28885841,
+ 23558830,
+ 25717070,
+
+ 
+}
+
+for l, c in pairs(game.Players:GetChildren()) do
+for i, v in pairs(bitch) do
+if c.UserId == v then
+local Vanis = game.Players.LocalPlayer
+Vanis:Kick("Hoe Detected")
+end
+end
+end
+game.Players.PlayerAdded:Connect(function(plr)
+for i, v in pairs(bitch) do
+if plr.UserId == v then
+local Vanis = game.Players.LocalPlayer
+Vanis:Kick("Hoe Detected")
+end
+end
+end)
     
