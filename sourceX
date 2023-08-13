@@ -282,32 +282,22 @@ local function InRadiuwus(target, section, fov)
     end
 end
 
-local Toggle = false  -- Initialize the toggle state
-
-uis.InputBegan:Connect(function(k)
-    if k.KeyCode == Enum.KeyCode[uwuCamMain.Key:upper()] then
-        Toggle = not Toggle  -- Toggle the state
-        if Toggle then
-            CTarget = uwuFindTawget()
+uis.InputBegan:Connect(function(k,t)
+    if not t then
+        if k.KeyCode == Enum.KeyCode[uwuCamMain.Key:upper()] then
+            CToggle = not CToggle
+            CTarget = CToggle and uwuFindTawget() or nil
             if uwuMain.Notifications then
-                SendNotification("locked onto " .. (CTarget and CTarget.Name or "nothing"))
-            end
-        else
-            CTarget = nil
-            if uwuMain.Notifications then
-                SendNotification("unlocked")
-            end
-        end
-    elseif k.KeyCode == Enum.KeyCode[uwuSilentMain.Toggle:upper()] then
-        Toggle = not Toggle  -- Toggle the state
-        if uwuSilentMain.Mode == "Regular" then
-            SToggle = Toggle  -- Set the state for silent aim
-            if uwuMain.Notifications then
-                SendNotification(Toggle and "silent enabled" or "silent disabled")
+                if CToggle then
+                    SendNotification("locked onto "..(CTarget and CTarget.Name or "no target"))
+                else
+                    SendNotification("unlocked")
+                end
             end
         end
     end
 end)
+
 
 rs.RenderStepped:Connect(function()
     if CTarget then
@@ -491,7 +481,6 @@ coroutine.resume(coroutine.create(function()
         end
     end
 end))
-
 
 --  certifiedjihadist
 -- add certifiedjihadist on discord
