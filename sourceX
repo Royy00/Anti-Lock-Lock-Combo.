@@ -6,7 +6,7 @@
 
 -- FAKE MACRO SETTINGS 
 -- P speed +5
--- O speed -5
+-- U speed -5
 -- C toggle  
 
 --ADDED FAKE ANIMATIONS++
@@ -627,7 +627,7 @@ getgenv().Fix = true
 
 getgenv().TeclasWS = {
     ["tecla1"] = "P", -- speed +5
-    ["tecla2"] = "O", -- speed -5
+    ["tecla2"] = "U", -- speed -5
     ["tecla3"] = "C" -- toggle  
 }
 
