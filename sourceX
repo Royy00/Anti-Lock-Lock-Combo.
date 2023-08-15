@@ -9,7 +9,7 @@
 -- O speed -5
 -- C toggle  
 
--ADDED FAKE ANIMATIONS++
+--ADDED FAKE ANIMATIONS++
 
 getgenv().DNS = {
     General = {
