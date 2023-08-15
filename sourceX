@@ -1,7 +1,15 @@
 --// ROY MADE THIS SHIT! WORLD'S BEST DA HOOD COMBO SCRIPT MADE BY "certifiedjihadist"!!
 -- Q to Lock C for silent aim
 -- B for Anti-Lock
+
 -- ADDED MOD DETECTOR !KICKS YOU WHEN A MOD/ADMIN JOINS!
+
+-- FAKE MACRO SETTINGS 
+-- P speed +5
+-- O speed -5
+-- C toggle  
+
+-ADDED FAKE ANIMATIONS++
 
 getgenv().DNS = {
     General = {
